@@ -172,3 +172,28 @@ body {
 .hobby-item p {
     margin: 0;
 }
+
+/* New styles for Education section */
+.education {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+.education h2 {
+    margin-top: 0;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    margin: 10px 0 5px;
+}
+
+.education-item p {
+    margin: 5px 0;
+}
