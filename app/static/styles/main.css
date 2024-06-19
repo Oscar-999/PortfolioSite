@@ -143,3 +143,32 @@ body {
 .work-item p {
     margin: 5px 0;
 }
+/* Hobbies */
+.hobbies {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+.hobbies h2 {
+    margin-top: 0;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hobby-item img {
+    border-radius: 8px;
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 20px;
+}
+
+.hobby-item p {
+    margin: 0;
+}
