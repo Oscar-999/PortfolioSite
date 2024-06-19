@@ -43,7 +43,7 @@
 
     <div class="profile">
       <div id="profile-picture" class="profile-picture">
-        <img src="../static/img/your_photo.png" />
+        <img src="{{ url_for('static', filename='img/your_photo.png') }}" alt="Your Photo" />
       </div>
       <h1>{{ title }}</h1>
     </div>
@@ -56,46 +56,39 @@
         enhancing my skills in [Skills/Areas of Expertise].
       </p>
     </div>
+
     <div class="work-experience">
       <h2>Previous Work Experiences</h2>
+      {% for work in work_experiences %}
       <div class="work-item">
-        <h3>Job Title 1</h3>
-        <p><strong>Company Name 1</strong></p>
-        <p>Duration: [Start Date] - [End Date]</p>
-        <p>Description of the job and your responsibilities.</p>
+        <h3>{{ work.title }}</h3>
+        <p><strong>{{ work.company }}</strong></p>
+        <p>Duration: {{ work.duration }}</p>
+        <p>{{ work.description }}</p>
       </div>
-      <div class="work-item">
-        <h3>Job Title 2</h3>
-        <p><strong>Company Name 2</strong></p>
-        <p>Duration: [Start Date] - [End Date]</p>
-        <p>Description of the job and your responsibilities.</p>
-      </div>
+      {% endfor %}
     </div>
+
     <div class="hobbies">
       <h2>Hobbies</h2>
+      {% for hobby in hobbies %}
       <div class="hobby-item">
-        <img src="./static/img/hobby1.jpg" alt="Hobby 1" />
-        <p>Hobby 1 description.</p>
+        <img src="{{ url_for('static', filename=hobby.image) }}" alt="Hobby Image" />
+        <p>{{ hobby.description }}</p>
       </div>
-      <div class="hobby-item">
-        <img src="./static/img/hobby2.jpg" alt="Hobby 2" />
-        <p>Hobby 2 description.</p>
-      </div>
+      {% endfor %}
     </div>
+
     <div class="education">
       <h2>Education</h2>
+      {% for edu in education %}
       <div class="education-item">
-        <h3>Degree Name 1</h3>
-        <p><strong>Institution Name 1</strong></p>
-        <p>Duration: [Start Date] - [End Date]</p>
-        <p>Description of the program and any notable achievements.</p>
+        <h3>{{ edu.degree }}</h3>
+        <p><strong>{{ edu.institution }}</strong></p>
+        <p>Duration: {{ edu.duration }}</p>
+        <p>{{ edu.description }}</p>
       </div>
-      <div class="education-item">
-        <h3>Degree Name 2</h3>
-        <p><strong>Institution Name 2</strong></p>
-        <p>Duration: [Start Date] - [End Date]</p>
-        <p>Description of the program and any notable achievements.</p>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="map">
