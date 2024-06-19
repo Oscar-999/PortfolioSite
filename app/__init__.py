@@ -15,7 +15,7 @@ hobbies = [
 ]
 education = [
     {"degree": "Degree Name 1", "institution": "Institution Name 1", "duration": "Start Date - End Date", "description": "Description of the program and any notable achievements."},
-    {"degree": "Degree Name 2", "institution": "Institution Name 2", "duration": "Start Date - End Date", "description": "Description of the program and any notable achievements."}
+    {"degree": "Degree Name 2", "institution": "Wiconsin Name 2", "duration": "Start Date - End Date", "description": "Description of the program and any notable achievements."}
 ]
 
 
