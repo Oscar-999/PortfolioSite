@@ -119,3 +119,27 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+/* New styles for Work Experience section */
+.work-experience {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+.work-experience h2 {
+    margin-top: 0;
+}
+
+.work-item {
+    margin-bottom: 20px;
+}
+
+.work-item h3 {
+    margin: 10px 0 5px;
+}
+
+.work-item p {
+    margin: 5px 0;
+}
