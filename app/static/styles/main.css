@@ -1,3 +1,13 @@
+/* General styles */
+body {
+  background-color: #f5f5f9;
+  background-size: cover;
+  width: auto;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  margin: 0;
+}
+
 p,
 h1,
 h2,
@@ -9,20 +19,9 @@ button {
   font-family: "Roboto", serif;
 }
 
-body {
-  background-color: #f5f5f9;
-  background-size: cover;
-  width: auto;
-  overflow-x: hidden;
-  font-family: "Roboto", serif;
-  margin: 0px;
-}
-
 .nav-bar {
   width: 100%;
-  display: inline-block;
   background-color: #1c539f;
-  font-family: "Roboto", serif;
   font-weight: 700 !important;
   padding-top: 10px;
 }
@@ -52,10 +51,31 @@ body {
   display: block;
   width: 100%;
   text-align: right;
-  padding-top: 0px;
-  padding-right: 0px;
+  padding-right: 20px; /* Add some padding for better spacing */
 }
 
+.nav-content nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-content nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-content nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-content nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Profile section */
 .profile {
   background-color: #1d539f !important;
   text-align: center;
@@ -73,8 +93,7 @@ body {
   border-radius: 50%;
   max-width: 100%;
   max-height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   display: block;
   padding: 20px;
 }
@@ -84,8 +103,9 @@ body {
   height: 200px;
 }
 
+/* Banner */
 .banner {
-  padding: 20px 0px 50px 0px;
+  padding: 20px 0 50px;
   height: 150px;
   background-color: #1d539f;
 }
@@ -102,8 +122,13 @@ body {
   font-size: 50px;
   font-weight: 700;
 }
-/* New styles for "About yourself" section */
-.about {
+
+/* About yourself section */
+.about,
+.work-experience,
+.hobbies,
+.education,
+.map {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -111,109 +136,58 @@ body {
   padding: 20px;
 }
 
-.about h2 {
+.about h2,
+.work-experience h2,
+.hobbies h2,
+.education h2,
+.map h2 {
   margin-top: 0;
 }
 
-.about p {
+.about p,
+.work-experience p,
+.hobby-item p,
+.education-item p {
   font-size: 16px;
   line-height: 1.6;
 }
-/* New styles for Work Experience section */
-.work-experience {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px;
-    padding: 20px;
-}
 
-.work-experience h2 {
-    margin-top: 0;
-}
-
+/* Work Experience section */
 .work-item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .work-item h3 {
-    margin: 10px 0 5px;
+  margin: 10px 0 5px;
 }
 
-.work-item p {
-    margin: 5px 0;
-}
-/* Hobbies */
-.hobbies {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px;
-    padding: 20px;
-}
-
-.hobbies h2 {
-    margin-top: 0;
-}
-
+/* Hobbies section */
 .hobby-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .hobby-item img {
-    border-radius: 8px;
-    max-width: 150px;
-    max-height: 150px;
-    margin-right: 20px;
+  border-radius: 8px;
+  max-width: 150px;
+  max-height: 150px;
+  margin-right: 20px;
 }
 
-.hobby-item p {
-    margin: 0;
-}
-
-/* New styles for Education section */
-.education {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px;
-    padding: 20px;
-}
-
-.education h2 {
-    margin-top: 0;
-}
-
+/* Education section */
 .education-item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .education-item h3 {
-    margin: 10px 0 5px;
+  margin: 10px 0 5px;
 }
 
-.education-item p {
-    margin: 5px 0;
-}
-
-/* New styles for Map section */
-.map {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-}
-
-.map h2 {
-    margin-top: 0;
-}
-
+/* Map section */
 #map {
-    height: 400px; /* Adjust height as needed */
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  height: 400px; /* Adjust height as needed */
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

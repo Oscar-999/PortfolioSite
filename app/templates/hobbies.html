@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="nav-content">
+      <a href="/">
+        <div class="nav-logo">
+          <img src="{{ url_for('static', filename='img/logo.svg') }}" />
+        </div>
+      </a>
+      <nav>
+        <ul>
+          {% for item in menu_items %}
+          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hobbies">
+    <h2>Hobbies</h2>
+    {% for hobby in hobbies %}
+    <div class="hobby-item">
+      <img src="{{ url_for('static', filename=hobby.image) }}" alt="Hobby Image" />
+      <p>{{ hobby.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
